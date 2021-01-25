@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %} 
+
+{% block content %}
+
+<a href="{% url 'home' %}">Home</a> | <a href="{% url 'about_us' %}">About</a> 
+<br>
+<a href="/">Home</a> | <a href="/about/">About</a> | <a href="/contact/">Contact</a>
+<br>
+Home page!
+
+<br>
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="{% static 'images/Vintage_Shoulder.jpg' %}" alt="Card image cap">
+  <div class="card-body-aqua">
+    <h5 class="card-title">Название карточки</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="{% url 'about_us' %}" class="btn btn-primary">About Us</a>
+  </div>
+</div>
+
+
+{% endblock %}
